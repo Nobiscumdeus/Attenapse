@@ -1,139 +1,167 @@
-🚀 Project Name
+# 🎯 Attenapse
 
-Brief, compelling description of what your full-stack application does
+A modern full-stack application for attention-based analytics and user engagement tracking, built with React and FastAPI.
 
-🌟 Live Demos
-ServiceURLDescription🎯 Live Apphttps://your-app.netlify.appMain application📚 API Docshttps://your-api.railway.app/docsInteractive API documentation🎨 Storybookhttps://your-storybook.netlify.appComponent library📖 ReDochttps://your-api.railway.app/redocAlternative API docs
-🛠 Tech Stack
-Frontend
+## 🌟 Live Demos
 
-React 18 - Modern React with hooks
-TypeScript - Type safety
-Storybook - Component development
-Tailwind CSS - Utility-first styling
+| Service | URL | Description |
+|---------|-----|-------------|
 
-Backend
+| 📚 **API Docs** | [https://nobiscumdeus.github.io/Attenapse/](https://nobiscumdeus.github.io/Attenapse/) | Interactive API documentation |
+| 🎨 **Storybook** | [https://nobiscumdeus.github.io/Attenapse/storybook](https://nobiscumdeus.github.io/Attenapse/storybook) | Component library & design system |
 
-FastAPI - Modern Python web framework
-Uvicorn - ASGI server
-Pydantic - Data validation
-SQLAlchemy - Database ORM (if applicable)
+## 🛠 Tech Stack
 
-Deployment
+**Frontend**
+- React 16 ++
+- Tailwind CSS for styling  
+- Storybook for component documentation
+- Responsive design principles
 
-Netlify - Frontend hosting
-Railway - Backend hosting
-GitHub Actions - CI/CD
+**Backend**
+- FastAPI with Python 3.11+
+- Pydantic for data validation
+- Auto-generated API documentation
+- RESTful API architecture
 
-✨ Features
+**Deployment**
+- GitHub Pages (Storybook)
 
-🔐 User authentication
-📱 Responsive design
-🚀 Real-time updates
-📊 Data visualization
-🎯 RESTful API
-📝 Auto-generated API docs
+## ✨ Key Features
 
-🚀 Quick Start
-Prerequisites
+- 📊 Real-time attention analytics
+- 📱 Fully responsive interface
+- 🎯 Interactive data visualizations
+- 📝 Auto-generated API documentation
+- 🎨 Comprehensive component library
 
-Node.js 18+
-Python 3.11+
-Git
+## 🚀 Quick Start
 
-Local Development
+### Prerequisites
+- Node.js 18+
+- Python 3.11+
+- Git
 
-Clone the repository
-bashgit clone https://github.com/yourusername/your-project.git
-cd your-project
+### Local Development
 
-Start the backend
-bashcd backend
+**1. Clone the repository**
+```bash
+git clone https://github.com/yourusername/Attenapse.git
+cd Attenapse
+```
+
+**2. Start the backend**
+```bash
+cd backend
 pip install -r requirements.txt
-python main.py
+uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+```
 Backend runs on: http://localhost:8000
-Start the frontend
-bashcd frontend
+
+**3. Start the frontend**
+```bash
+cd frontend
 npm install
 npm start
-Frontend runs on: http://localhost:3000
-Run Storybook
-bashcd frontend
+```
+Frontend runs on: http://localhost:5173  or http://localhost:3000
+
+**4. Run Storybook (Optional)**
+```bash
+cd frontend
 npm run storybook
+```
 Storybook runs on: http://localhost:6006
 
-📚 API Documentation
-The FastAPI backend automatically generates interactive documentation:
+## 📚 API Documentation
 
-Swagger UI: /docs - Interactive API testing
-ReDoc: /redoc - Clean, readable documentation
+FastAPI automatically generates comprehensive API documentation:
 
-Key Endpoints
+- **Swagger UI**: `http:localhost:8000/docs` - Interactive API testing interface
+- **ReDoc**: `http:localhost:8000/redoc` - Clean, readable documentation format
 
-GET / - Welcome message
-POST /api/users - Create user
-GET /api/users/{id} - Get user details
-PUT /api/users/{id} - Update user
+### Key API Endpoints
+- Follows REST API
 
-🎨 Component Library
-Explore the component library in Storybook to see:
+## 🎨 Component Library
 
-Individual component demos
-Props documentation
-Usage examples
-Design system tokens
+Explore our design system and component library in Storybook:
 
-🏗 Project Structure
-├── frontend/                 # React application
+- **Component Documentation** - Props, variants, and usage examples
+- **Design Tokens** - Colors, typography, spacing system
+- **Interactive Demos** - Live component playground
+- **Accessibility Guidelines** - WCAG compliance examples
+
+Perfect for developers and designers to understand the interface patterns.
+
+## 🏗 Project Structure
+
+```
+Attenapse/
+├── frontend/                 # React TypeScript application
 │   ├── src/
-│   │   ├── components/      # Reusable components
-│   │   ├── pages/          # Page components
-│   │   └── stories/        # Storybook stories
+│   │   ├── components/      # Reusable UI components
+│   │   ├── pages/          # Application pages
+│   │   ├── hooks/          # Custom React hooks
+│   │   └── stories/        # Storybook component stories
 │   ├── .storybook/         # Storybook configuration
 │   └── package.json
-├── backend/                 # FastAPI application
-│   ├── app/
-│   │   ├── models/         # Database models
-│   │   ├── routes/         # API routes
-│   │   └── services/       # Business logic
-│   ├── main.py            # FastAPI app entry point
+├── backend/                 # FastAPI Python application
+│   ├── app.py
+│   │         # Business logic
+│   ├── /alembic         # FastAPI application entry
 │   └── requirements.txt
+├── docs/                   # GitHub Pages documentation
 └── README.md
-🚀 Deployment
-This project is automatically deployed using:
+```
 
-Frontend: Netlify (auto-deploys from main branch)
-Backend: Railway (auto-deploys from main branch)
-Storybook: Netlify (separate deployment)
+## 🚀 Deployment
 
-Manual Deployment
+This project uses automated deployment pipelines:
 
-Frontend to Netlify
-bashcd frontend
+- **Frontend**: Auto-deploys to Netlify from `main` branch
+- **Backend**: Auto-deploys to Railway from `main` branch  
+- **Storybook**: Deployed to GitHub Pages via Actions
+
+### Manual Deployment
+
+**Frontend**
+```bash
+cd frontend
 npm run build
-# Upload build/ folder to Netlify
+# Deploy build/ folder to your hosting service
+```
 
-Backend to Railway
-bash# Push to main branch triggers auto-deployment
-git push origin main
+**Backend**
+```bash
+# Ensure requirements.txt is updated
+pip freeze > requirements.txt
+git push origin main  # Triggers auto-deployment
+```
 
+## 🧪 Testing
 
-🧪 Testing
-bash# Frontend tests
+```bash
+# Frontend tests
 cd frontend
 npm test
 
-# Backend tests
+# Backend tests  
 cd backend
 python -m pytest
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-👨‍💻 Author
-Your Name
+```
 
-Portfolio: your-portfolio.com
-LinkedIn: linkedin.com/in/yourname
-GitHub: @yourusername
+## 📄 License
 
+MIT License 
 
-⭐ Star this repository if you found it helpful!
+## 👨‍💻 Connect
+
+Built with ❤️ by [Olumide E. Adeola ]
+
+- 🌐 **Portfolio**: [https://chasfatprojects.netlify.app](https:chasfatprojects.netlify.app)
+- 🐙 **GitHub**: [@nobiscumdeus](https://github.com/nobiscumdeus.git)
+
+---
+
+⭐ **Star this repository if you find it useful!**
