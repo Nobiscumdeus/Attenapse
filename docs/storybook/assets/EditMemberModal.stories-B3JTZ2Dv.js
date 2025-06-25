@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{e as g}from"./iframe-Be2ADh9q.js";import{E as u}from"./EditModal-CnOqYh0L.js";import"./createLucideIcon-Dpyulirm.js";import"./user-BC93mOzw.js";const oe={title:"Components/Modals/EditMemberModal",component:u,parameters:{layout:"fullscreen",docs:{description:{component:`
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{e as g}from"./iframe-DMhsdgcO.js";import{E as u}from"./EditModal-Pr4Jyrab.js";import"./createLucideIcon-nNh83jiZ.js";import"./user-uaGvAcwb.js";const oe={title:"Components/Modals/EditMemberModal",component:u,parameters:{layout:"fullscreen",docs:{description:{component:`
 # EditMemberModal Component
 
 A comprehensive modal component for editing church member information. This modal provides a user-friendly interface for updating personal details, contact information, and church-specific data.
