@@ -1,0 +1,220 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Documentation/Youth Attendance System" />
+
+# Youth Attendance Management System
+
+A comprehensive React-based application designed to streamline youth ministry attendance tracking, member management, and reporting for churches and religious organizations.
+
+## 🎯 Application Overview
+
+The Youth Attendance System is a modern, user-friendly platform that helps youth pastors and ministry leaders efficiently manage their programs. Built with React and featuring a clean, intuitive interface, it provides all the tools needed to track attendance, manage member information, and generate insightful reports.
+
+## ✨ Key Features
+
+### 📊 Dashboard & Analytics
+- **Real-time Statistics**: Live overview of attendance trends, member counts, and engagement metrics
+- **Visual Data Representation**: Interactive charts and graphs using StatCard components
+- **Quick Actions**: Fast access to common tasks like marking attendance or adding new members
+- **Performance Insights**: Track ministry growth and identify attendance patterns
+
+### 👥 Member Management
+- **Comprehensive Member Profiles**: Store detailed information including contact details, emergency contacts, and ministry involvement
+- **Easy Registration**: Streamlined new member onboarding with the NewMemberForm component
+- **Member Directory**: Searchable and filterable member database
+- **Edit & Update**: Quick member information updates through the EditModal system
+
+### ✅ Attendance Tracking
+- **Multiple Attendance Types**: Support for different service types (Sunday services, special events, etc.)
+- **Batch Check-in**: Efficiently mark attendance for multiple members
+- **Historical Records**: Complete attendance history for each member
+- **Flexible Scheduling**: Accommodate various meeting schedules and frequencies
+
+### 📈 Reports & Analytics
+- **Attendance Reports**: Detailed reports showing attendance trends over time
+- **Member Statistics**: Comprehensive analytics on member engagement and participation
+- **Export Capabilities**: Generate reports in various formats for leadership review
+- **Custom Date Ranges**: Flexible reporting periods to match your ministry needs
+
+### 🗓️ Service Management
+- **Sunday Services**: Dedicated tab for regular Sunday attendance tracking
+- **Special Events**: Support for camps, retreats, and special ministry events
+- **Service History**: Complete record of all services and events
+- **Attendance Patterns**: Identify peak attendance times and seasonal trends
+
+## 🏗️ System Architecture
+
+### Core Components
+
+#### **Home.jsx** - Main Application Shell
+The central hub that orchestrates all application functionality, managing navigation between different sections and maintaining application state.
+
+#### **DashboardTab.jsx** - Analytics Dashboard
+Provides comprehensive overview with key metrics, recent activity, and quick access to important functions.
+
+#### **MembersTab.jsx** - Member Management
+Complete member lifecycle management including registration, profile management, and member directory.
+
+#### **AttendanceTab.jsx** - Attendance Tracking
+Core attendance functionality with support for different service types and batch operations.
+
+#### **SundayTab.jsx** - Sunday Services
+Specialized interface for regular Sunday service attendance with streamlined check-in process.
+
+#### **ReportsTab.jsx** - Analytics & Reporting
+Advanced reporting capabilities with customizable date ranges and export options.
+
+### Supporting Components
+
+#### **StatCard.jsx** - Metrics Display
+Versatile component for displaying key performance indicators with visual appeal and multiple color themes.
+
+#### **TabButton.jsx** - Navigation
+Consistent navigation interface with active state management and accessibility features.
+
+#### **NewMemberForm.jsx** - Member Registration
+Comprehensive form component for adding new members with validation and error handling.
+
+#### **EditModal.jsx** - Quick Updates
+Modal interface for editing member information without leaving the current context.
+
+#### **Pagination.jsx** - Data Navigation
+Efficient pagination component for handling large datasets with customizable page sizes.
+
+### Custom Hooks
+
+#### **usePagination.js** - Pagination Logic
+Reusable hook that encapsulates pagination state management and calculations, used across multiple components for consistent behavior.
+
+### Error Handling
+
+#### **ErrorBoundary.jsx** - Application Stability
+Robust error boundary implementation that gracefully handles component failures and provides user-friendly error messages.
+
+## 🎨 User Interface Design
+
+### Design Principles
+- **Clean & Intuitive**: Minimalist design focused on usability and clarity
+- **Responsive Layout**: Fully responsive design that works on desktop, tablet, and mobile devices
+- **Accessibility First**: WCAG compliant with proper contrast ratios and keyboard navigation
+- **Consistent Theming**: Unified color scheme and typography throughout the application
+
+### Color System
+The application uses a carefully crafted color palette that supports different types of information:
+- **Green**: Positive metrics, successful actions, growth indicators
+- **Blue**: Neutral information, navigation elements, general data
+- **Red**: Alerts, declined metrics, important warnings
+- **Purple**: Special features, premium information, unique categories
+- **Yellow**: Warnings, pending items, attention-required states
+
+### Typography & Layout
+- **Clear Hierarchy**: Proper heading structure for screen readers and visual clarity
+- **Readable Fonts**: Optimized font choices for different screen sizes and lighting conditions
+- **Generous Spacing**: Comfortable white space that doesn't feel cramped
+- **Grid-based Layout**: Consistent alignment and proportions throughout
+
+## 🔧 Technical Implementation
+
+### Technology Stack
+- **React 18**: Modern React with hooks and functional components
+- **CSS3**: Custom styling with CSS Grid and Flexbox for layouts
+- **JavaScript ES6+**: Modern JavaScript features for clean, maintainable code
+- **Storybook**: Component documentation and development environment
+
+### Performance Optimizations
+- **Component Splitting**: Modular architecture for better code organization and lazy loading
+- **State Management**: Efficient state handling to minimize unnecessary re-renders
+- **Data Pagination**: Large datasets are paginated to maintain smooth performance
+- **Error Boundaries**: Prevent cascading failures and maintain application stability
+
+### Development Workflow
+- **Component-Driven Development**: Each component is developed and tested in isolation
+- **Story-Driven Documentation**: Comprehensive Storybook stories for all components
+- **Modular Architecture**: Clear separation of concerns and reusable components
+- **Custom Hooks**: Shared logic extracted into reusable hooks
+
+## 📚 Component Documentation
+
+### Interactive Examples
+Each component has detailed Storybook documentation with:
+- **Live Examples**: Interactive component previews with real-time property editing
+- **Usage Guidelines**: Best practices and implementation recommendations
+- **API Documentation**: Complete prop specifications and type definitions
+- **Design Variations**: Multiple examples showing different use cases and configurations
+
+### Available Stories
+- **StatCard**: Metric display components with all color variants and use cases
+- **TabButton**: Navigation components with active/inactive states
+- **NewMemberForm**: Complete form examples with validation scenarios
+- **Pagination**: Data navigation with different page sizes and configurations
+- **ChurchAttendanceSystem**: Full application examples and workflows
+
+## 🚀 Getting Started
+
+### For Administrators
+1. **Dashboard Overview**: Start with the dashboard to understand current metrics
+2. **Member Setup**: Add your youth members using the Members tab
+3. **Attendance Tracking**: Begin tracking attendance using the Attendance or Sunday tabs
+4. **Report Generation**: Use the Reports tab to analyze trends and generate leadership reports
+
+### For Developers
+1. **Component Exploration**: Browse the Storybook documentation to understand available components
+2. **Story Examples**: Use the interactive stories to see components in action
+3. **Implementation Patterns**: Follow the established patterns for consistent development
+4. **Custom Extensions**: Build upon the existing components for custom functionality
+
+## 🎯 Use Cases
+
+### Weekly Ministry Operations
+- **Pre-Service Setup**: Quickly review expected attendees and prepare for service
+- **Live Attendance**: Mark attendance in real-time during service
+- **Post-Service Follow-up**: Generate quick reports and identify absent members
+- **Trend Analysis**: Review attendance patterns to improve ministry effectiveness
+
+### Administrative Tasks
+- **New Member Onboarding**: Streamlined process for adding new youth to the system
+- **Data Maintenance**: Keep member information current and accurate
+- **Report Generation**: Create reports for leadership meetings and ministry planning
+- **Historical Analysis**: Review long-term trends for strategic planning
+
+### Ministry Planning
+- **Capacity Planning**: Understand typical attendance for event planning
+- **Engagement Analysis**: Identify highly engaged members for leadership development
+- **Outreach Opportunities**: Find members who might need additional attention
+- **Growth Tracking**: Monitor ministry expansion and effectiveness
+
+## 🔄 Future Enhancements
+
+### Planned Features
+- **Mobile App Integration**: Native mobile app for on-the-go attendance tracking
+- **Advanced Analytics**: More sophisticated reporting with predictive analytics
+- **Communication Tools**: Integrated messaging and notification systems
+- **Event Management**: Enhanced support for special events and camps
+- **Parent Portal**: Interface for parents to track their youth's involvement
+
+### Integration Possibilities
+- **Church Management Systems**: Integration with popular ChMS platforms
+- **Communication Platforms**: Connection with email and SMS services
+- **Calendar Systems**: Synchronization with church calendars and scheduling
+- **Payment Processing**: Integration for camp fees and ministry expenses
+
+---
+
+## 📖 Documentation Navigation
+
+### Component Stories
+- **[StatCard Stories](/?path=/story/components-statcard--default)** - Metric display components
+- **[TabButton Stories](/?path=/story/components-tabbutton--default)** - Navigation components  
+- **[NewMemberForm Stories](/?path=/story/components-newmemberform--default)** - Member registration forms
+- **[Pagination Stories](/?path=/story/components-pagination--default)** - Data navigation components
+- **[Full System Stories](/?path=/story/applications-churchattendancesystem--default)** - Complete application examples
+
+### Additional Resources
+- **Component API Documentation**: Detailed prop specifications for each component
+- **Design Guidelines**: Visual design principles and implementation standards
+- **Development Patterns**: Code organization and development best practices
+- **Accessibility Guide**: WCAG compliance and inclusive design principles
+
+---
+
+*This documentation is automatically maintained and updated with each component change. For the most current information, always refer to the individual component stories and their associated documentation.*

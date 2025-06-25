@@ -1,0 +1,6 @@
+import{c}from"./createLucideIcon-65VF8ZRl.js";import{j as e}from"./jsx-runtime-D_zvdyIk.js";/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const i=[["path",{d:"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2",key:"1yyitq"}],["path",{d:"M16 3.128a4 4 0 0 1 0 7.744",key:"16gr8j"}],["path",{d:"M22 21v-2a4 4 0 0 0-3-3.87",key:"kshegd"}],["circle",{cx:"9",cy:"7",r:"4",key:"nufk8"}]],x=c("users",i),n=({title:a,value:r,subtitle:t,icon:d,color:s="red"})=>e.jsx("div",{className:`bg-gradient-to-br from-${s}-50 to-${s}-100 p-6 rounded-xl border border-${s}-200`,children:e.jsxs("div",{className:"flex items-center justify-between",children:[e.jsxs("div",{children:[e.jsx("p",{className:"text-gray-600 text-sm font-medium",children:a}),e.jsx("p",{className:`text-3xl font-bold text-${s}-700  mt-1`,children:r}),t&&e.jsx("p",{className:"text-gray-500 text-sm mt-1",children:t})]}),e.jsx(d,{className:`text-${s}-600`,size:32})]})});n.__docgenInfo={description:"",methods:[],displayName:"StatCard",props:{color:{defaultValue:{value:'"red"',computed:!1},required:!1}}};export{n as S,x as U};
